@@ -2,7 +2,7 @@
  * @Author: nieloong@aliyun.com
  * @Date: 2020-03-09 16:20:41
  * @LastEditors: Loong Nie
- * @LastEditTime: 2020-03-09 22:55:12
+ * @LastEditTime: 2020-03-09 23:00:52
  * @FilePath: \WinDynamicDesktop\README.md
  * @Descripttion:
  * @version:
@@ -69,7 +69,7 @@
 
   > 从文件导入
 
-  ![image](https://raw.githubusercontent.com/nieloong/WinDynamicDesktop/master/layout/1.png)
+  ![image](https://github.com/nieloong/WinDynamicDesktop/blob/master/layout/1.png?raw=true)
 
 ### 主题文件对应
 
