@@ -2,13 +2,13 @@
  * @Author: nieloong@aliyun.com
  * @Date: 2020-03-09 16:20:41
  * @LastEditors: Loong Nie
- * @LastEditTime: 2020-03-09 21:58:10
+ * @LastEditTime: 2020-03-09 22:55:12
  * @FilePath: \WinDynamicDesktop\README.md
  * @Descripttion:
  * @version:
  -->
 
-##根据时间变换桌面背景软件及主题
+## 根据时间变换桌面背景软件及主题
 
 - **安装问题**
 
@@ -29,43 +29,53 @@
      要关闭此功能，请移除注册表值 [HKLM\Software\Microsoft\Fusion!EnableLog]。
      </font>
 
+     _net framework 各版本详细说明_
+     [https://blog.csdn.net/nielongwc/article/details/104763173](https://blog.csdn.net/nielongwc/article/details/104763173)
+
+
      > **解决方法** 先更新 window 系统，再安装
 
-  2. windows 10 系统更新失败问题
+2. windows 10 系统更新失败问题
 
-     > **解决方法** 老系统各种 Google 解决更新的方法都试验了，最后妥协重装新系统。
+   > **解决方法** 老系统各种 Google 解决更新的方法都试验了，最后妥协重装新系统。
 
-  3. 主题包命名问题
+3. 主题包命名问题
 
-     > **注意** 避免与默认主题命名区分
+   > **注意** 避免与默认主题命名区分
 
-  4. 主题 JSON 编写
+4. 主题 JSON 编写
 
-     > 默认情况下，WinDynamicDesktop 使用 Mojave 壁纸，但如果在与 EXE 相同的文件夹中创建 images.conf 文件，则可以自定义使用的图像。这里可以找到默认的 images.conf。它采用 JSON 格式，并且必须包含以下值：
-     > [imagesZipUri] - 包含要从中下载 images.zip 文件的 URL 的字符串，如果图像子文件夹中的内容由用户提供，则为 null
-     > [imageFilename] - 包含每个壁纸图像文件名的字符串，用{0}代替图像编号
-     > [dayImageList] - 列出要在整个一天中（日出与日落之间）显示的图像编号的数字数组
-     > [nightImageList] - 列出整个夜晚（日落和日出之间）显示的图像编号的数字列表
+   > 默认情况下，WinDynamicDesktop 使用 Mojave 壁纸，但如果在与 EXE 相同的文件夹中创建 images.conf 文件，则可以自定义使用的图像。这里可以找到默认的 images.conf。它采用 JSON 格式，并且必须包含以下值：
+   > [imagesZipUri] - 包含要从中下载 images.zip 文件的 URL 的字符串，如果图像子文件夹中的内容由用户提供，则为 null
+   > [imageFilename] - 包含每个壁纸图像文件名的字符串，用{0}代替图像编号
+   > [dayImageList] - 列出要在整个一天中（日出与日落之间）显示的图像编号的数字数组
+   > [nightImageList] - 列出整个夜晚（日落和日出之间）显示的图像编号的数字列表
 
-     **案例**
+   **案例**
 
-     ```JSON
-     {
-      "imagesUrls": "",
-      "imageFilename": "mojave_dynamic_*.jpeg", //主题名称+*.jpg
-      "imageCredits": "LoongKing", //主题创建者
-      "sunriseImageList": [2, 3, 4], //日出图像序号
-      "dayImageList": [5, 6, 7, 8, 9, 10, 11], //白天图像序号
-      "sunsetImageList": [1, 12, 13], //日落图像序号
-      "nightImageList": [14, 15, 16] //夜晚图像序号
-     }
-     ```
+   ```JSON {.line-numbers}
+   {
+    "imagesUrls": "",
+    "imageFilename": "mojave_dynamic_*.jpeg", //主题名称+*.jpg
+    "imageCredits": "LoongKing", //主题创建者
+    "sunriseImageList": [2, 3, 4], //日出图像序号
+    "dayImageList": [5, 6, 7, 8, 9, 10, 11], //白天图像序号
+    "sunsetImageList": [1, 12, 13], //日落图像序号
+    "nightImageList": [14, 15, 16] //夜晚图像序号
+   }
+   ```
 
 - **主题包**
 
   > 从文件导入
 
-  ![image](https://github.com/nieloong/WinDynamicDesktop/raw/master/layout/1.png)
+  ![image](https://raw.githubusercontent.com/nieloong/WinDynamicDesktop/master/layout/1.png)
+
+### 主题文件对应
+
+    **仿 Mac 沙漠** >> f Mojave Desert.zip
+    **Earth_View.ddw** >> Earth_View.ddw
+    **Firewatch.ddw** >> Firewatch.ddw
 
 - **总结**
   痛并快乐着。。。┑(￣ Д ￣)┍
